@@ -1,8 +1,8 @@
-let arr = [2,3,5,2,9,7,1];
+let arr = [2,3,-5,2,9,-7,1];
 let window = 3;
 
 function maxSubArraySum(arr, window) {
-    let maxSum = 0;
+    let maxSum = Number.NEGATIVE_INFINITY;
     let sum = 0;
     let dequeue = []
     for(let i=0;i<arr.length;i++){
